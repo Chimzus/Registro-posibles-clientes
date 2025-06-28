@@ -12,7 +12,7 @@ const clienteSchema = new mongoose.Schema({
     enum: ['pendiente', 'en revisión', 'descartado', 'cerrado'],
     default: 'pendiente'
   },
-  observaciones: { type: String, required: true } // 👈 AGREGADO AQUÍ
+  observaciones: { type: String, required: true } 
 }, { timestamps: true });
 
 module.exports = mongoose.model('Cliente', clienteSchema);
