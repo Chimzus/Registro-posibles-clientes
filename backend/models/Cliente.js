@@ -12,7 +12,8 @@ const clienteSchema = new mongoose.Schema({
     enum: ['pendiente', 'en revisión', 'descartado', 'cerrado'],
     default: 'pendiente'
   },
-  observaciones: { type: String, required: true } 
+  observaciones: { type: String, required: true },
+  telefono: { type: String, required: true } 
 }, { timestamps: true });
 
 module.exports = mongoose.model('Cliente', clienteSchema);
